@@ -1,0 +1,49 @@
+* Add and manipulate checkbox
+
+1. add a list
+   then press <M-RET> for the next item
+
+2. [ ] add a checkbox
+
+   <C-u C-c C-c> add a checkbox in front of a list item afterwards.
+
+3. [ ] <M-S-RET> add a checkboxed item below cursor. behave similarly
+   to that of headlines.
+
+4. [X] Check the box <C-c C-c> get [ ] -> [X]
+
+   Alternatively, <C-c C-x C-b>, which can also check, uncheck boxes
+   in a region.
+
+5. [ ] uncheck again.
+   Another <C-c C-c> get [X] -> [ ]
+
+6. [ ] the stage between finished and unfinished like [-], is toggleed
+   through double prefix <C-u C-u C-c C-c>
+
+* TODO checkbox items count
+** The count of checkbox of the same grade [1/5]
+
+- [X] First
+- [ ] Second
+- [ ] Third
+- [ ] Get a count by add a `[0/1]` or '[0%]' in the
+  heading,
+  - [ ] sub
+- [ ] then press <C-c #> `org-update-statistics-cookies`
+
+** You can either count the checkbox under only one level or recursively.
+
+Maybe set a variable, yet to be discovered.
+
+** Ordered checkbox
+:PROPERTIES:
+:ORDERED:  t
+:END:
+
+Toggle with <C-c C-x o>
+
+- [X] one
+- [X] two
+- [ ] three
+- [ ] four
