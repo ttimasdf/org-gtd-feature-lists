@@ -1,0 +1,28 @@
+* A Todolist for a simple project.
+
+** Todo list item one
+
+With Notes.
+<M-RET> new item.
+
+** TODO todo item with todo keywords.
+
+<M-S-RET> New TODO item right under the cursor.
+<C-S-RET> New TODO item at the bottom.
+
+*** List item type 1 (Subtitle)
+
+<M-RET> and then <tab> `org-cycle'
+
+**** Sub item
+
+**** Sub item
+
+**** Sub item
+
+*** List item type 2 (Unnumbered list)
+
+- Sub item
+- Sub item
+- Sub item
+- Sub item
