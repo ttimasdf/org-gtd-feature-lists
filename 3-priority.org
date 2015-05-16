@@ -1,0 +1,12 @@
+* Priority
+
+Priority only matters when sorting todo items in agenda view.
+** [#E] This is a subitem
+set priority by <C-c ,>
+** [#D] or using <S-up> <S-down>
+Shift not super!
+
+** Priority grades can be set using variables or per-buffer settings through property tag.
+#+PRIORITIES: A E C
+
+** [#A] The property apply throughout the whole buffer wherever it defined.
