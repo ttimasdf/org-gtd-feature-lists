@@ -1,18 +1,20 @@
 * A Todolist for a simple project.
 
-** Todo list item one
+** First todo list item
 
 With Notes.
-<M-RET> new item.
+`M-RET` new item heading
 
 ** TODO todo item with todo keywords.
 
-<M-S-RET> New TODO item right under the cursor.
-<C-S-RET> New TODO item at the bottom.
+`M-S-RET` New TODO item right under the cursor.
+`C-S-RET` New TODO item at the bottom.
+
+** Sub items
 
 *** List item type 1 (Subtitle)
 
-<M-RET> and then <tab> `org-cycle'
+`M-RET` and then `tab` (org-cycle)
 
 **** Sub item
 
@@ -26,3 +28,18 @@ With Notes.
 - Sub item
 - Sub item
 - Sub item
+
+
+** switch todo states.
+
+below are the code in `.emacs` for customizing tags
+#+BEGIN_SRC lisp
+(setq org-todo-keywords
+      (quote ((sequence "TODO(t)" "NEXT(n)" "|" "DONE(d!/!)")
+              (sequence "PROJECT(p)" "|" "DONE(d!/!)" "CANCELLED(c@/!)")
+              (sequence "WAITING(w@/!)" "HOLD(h)" "|" "CANCELLED(c@/!)"))))
+
+#+END_SRC
+
+then we can switch tags by `C-c C-t t` to switch to `TODO` state, or
+`C-c C-t d` to make it  `DONE`.
