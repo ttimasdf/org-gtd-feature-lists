@@ -1,0 +1,65 @@
+* Add
+** Four
+This is the most important part.
+** TODO to add a timestamp anywhere in text body
+<2015-05-16 Sat>
+
+`C-c .`
+
+open a \*Calandar\* view and prompt for a date in a
+minibuffer. Use < and > to move the month view back and forth.
+*** Add `C-u` prefix to add clock
+<2015-05-16 Sat 10:00>
+
+`C-u C-c . <RET> . 10:00 <RET>`
+Use `.` for today. Time is in 24h format.
+*** Add a timestamp through \*Calandar\*
+`C-c <` add the saved location in the \*Calandar\* buffer, way to
+change the location stated later in this tutorial.
+
+
+** Add a SCHEDULED timestamp
+SCHEDULED: <2015-05-16 Sat>
+
+`C-c C-s`
+
+with prefix `C-u` to deactivate it.
+
+** Add a DEADLINE
+DEADLINE: <2015-05-23 Sat>
+SCHEDULED: <2015-05-16 Sat>
+
+`C-c C-d`
+
+
+* Change
+
+** change the date in the text
+<2015-05-16 Sat>
+This is a date
+
+Move the cursor onto the day and press `S-<up>` or `S-<down>`
+<2015-05-15 Fri>
+
+The day will change forward or backward, depending on your key
+prompt. So will the weekday. Press the key on day or weekday has the
+same effect, on the month/year will change them accordingly.
+
+Specifically, use `S-<up>` and down on the bracket will switch between
+active timestamp and inactive ones, which will decide whether it will
+generate an entry in the agenda view (maybe).
+
+** view the time stamp in the calandar
+move the cursor on the date below
+<2015-05-16 Sat>
+press `C-c >`
+
+it will open a \*Calandar\* window and change your mouse focus on
+it. usage of it please refer to the manual. There are several
+
+you can press `q` to quit \*Calandar\* view. with the location
+saved. Then you can use `C-c <` to add its time stamp, mentioned
+above.
+
+* Time format
+T.B.C.
