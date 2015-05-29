@@ -1,0 +1,34 @@
+* Assign a tag
+** Dummy heading
+
+`C-c C-c` on the heading to enter a tag in minibuffer, and
+automatically align it.
+*** Heading with tag                                                          :tag:another_fgg:@:
+
+** Usable special symbols
+
+(Covers the symbols upon the number keys)
+
+*** Underscore                                                                :a_a:
+*** Sharp                                                                     :sharp:#sharp:
+*** Percent sign                                                              :percent:%:
+*** At sign                                                                   :at:@:
+
+** Symbols unavailable                                                         :s:
+
+Identified by the correction of Emacs syntax highlighting
+`( ) $ - ^ ~ ! & * =`
+*** And sign, minus and plus
+`& - +` can be used to input several tags at a time, which is easier to
+type than `:`(easier?)
+
+Simply input an `-` or `&` will lead to a single ` : `
+which cannot be identified and replaced automatically by org. It will
+consider it part of the heading.
+* Set tags auto completion
+#+TAGS: @work @home @tennisclub
+#+TAGS: laptop car pc sailboat
+#+BEGIN_SRC org
+     #+TAGS: @work @home @tennisclub
+     #+TAGS: laptop car pc sailboat
+#+END_SRC
