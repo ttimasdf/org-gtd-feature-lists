@@ -5,84 +5,54 @@ goal. It can be used to provide a better and organized view and easier
 to set out to do something instead of get stucked in the sea of
 undless labor.
 ** A project tag in heading
-`C-c C-t p` in my [[https://github.com/ttimasdf/emacs.d][Emacs settings]]. Typically, you can manually add a
-`PROJECT` tag by typing `C-c C-t` and enter `PROJECT` in minibuffer.
+=C-c C-t p= in my [[https://github.com/ttimasdf/emacs.d][Emacs settings]]. Typically, you can manually add a
+=PROJECT= tag by typing =C-c C-t= and enter =PROJECT= in minibuffer.
 The keyboard shortcut can be set using the method mention in
 [[file:1-items.org::*switch%20todo%20states.][switch todo states]].
 *** PROJECT Like this
 **** You can add things afterwards.
-** Recommanded catagorizing method
-- Use tags as contexts
-- Use project tag as projects
+* Recommanded catagorizing method
+- Use tags as contexts and working location, e.g. =:@position:=
+- Use project tag to set apart projects.
 - Use multiple files to represent different long-term goals.
+- Use custom agenda views to reorganize the items.
+
 * A sample organization
-* Part of Goal: Hacker
-doitimExported: Goal
+** Part of Goal: Hacker
+
+   _doitimExported: Goal:Hacker_
 #+BEGIN_SRC
 World Automated !pundefined ^undefined #missing @搬砖工 [[专注于花样造轮子，俗称转法轮]]
 World Secured !pundefined ^undefined #missing @GEEK
 #+END_SRC
-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
-exported: Project
+
+_doitimExported: Project:Word Automated_
 #+BEGIN_SRC
 Pre-TTY prototype implementation !p0 ^next #World Automated @missing [[现在只有个doc你坑谁呢！(￣Д￣)ﾉ]]
 ECS的花样食用姿势 !p0 ^next #World Automated @missing [[购买100g云数据盘，里面装所有的依赖及其他，还跟便宜/nAliyun OSS 100GB/nHK/LA ¥0.07/hr/n青岛 ¥0.038/hr/n深圳、北京 ¥0.042/hr/n/n这是100g的价格！/n10g的话一个月下来才3块钱！！/n⊙_⊙好像不如从云盘现下呢、、]]
 paas平台部署脚本 !p1 ^noplan #World Automated @转法轮 &拖延症患者 [[就是我那几个小东西，不麻烦就好。shell脚本对生产力提升巨大]]
 #+END_SRC
 
-** PROJECT World Automated                                                        :home:labor:
-*** Pre-TTY prototype implementation
+*** PROJECT World Automated                                                   :home:labor:
 
-** Pre-TTY prototype implementationq
-just get to learn money from share market.<2015-06-06 Sat>
+Manually interpreted to Org format.
 
-* Metadata
-* Organize by projects.
-
-A project is a combination of several things to do to reach a fixed
-goal. It can be used to provide a better and organized view and easier
-to set out to do something instead of get stucked in the sea of
-undless labor.
-** A project tag in heading
-`C-c C-t p` in my [[https://github.com/ttimasdf/emacs.d][Emacs settings]]. Typically, you can manually add a
-`PROJECT` tag by typing `C-c C-t` and enter `PROJECT` in minibuffer.
-The keyboard shortcut can be set using the method mention in
-[[file:1-items.org::*switch%20todo%20states.][switch todo states]].
-*** PROJECT Like this
-**** You can add things afterwards.
-** Recommanded catagorizing method
-- Use tags as contexts
-- Use project tag as projects
-- Use multiple files to represent different long-term goals.
-* A sample organization
-* Part of Goal: Hacker
-doitimExported: Goal
-#+BEGIN_SRC
-World Automated !pundefined ^undefined #missing @搬砖工 [[专注于花样造轮子，俗称转法轮]]
-World Secured !pundefined ^undefined #missing @GEEK
-#+END_SRC
-nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn
-exported: Project
-#+BEGIN_SRC
-Pre-TTY prototype implementation !p0 ^next #World Automated @missing [[现在只有个doc你坑谁呢！(￣Д￣)ﾉ]]
-ECS的花样食用姿势 !p0 ^next #World Automated @missing [[购买100g云数据盘，里面装所有的依赖及其他，还跟便宜/nAliyun OSS 100GB/nHK/LA ¥0.07/hr/n青岛 ¥0.038/hr/n深圳、北京 ¥0.042/hr/n/n这是100g的价格！/n10g的话一个月下来才3块钱！！/n⊙_⊙好像不如从云盘现下呢、、]]
-paas平台部署脚本 !p1 ^noplan #World Automated @转法轮 &拖延症患者 [[就是我那几个小东西，不麻烦就好。shell脚本对生产力提升巨大]]
-#+END_SRC
-
-** PROJECT World Automated                                                        :home:labor:
-
-*** NEXT [#C] Pre-TTY prototype implementation
-just get to learn money from share market.<2015-06-06 Sat>
-
+**** NEXT [#C] Pre-TTY prototype implementation
+# What is that?
 现在只有个doc你坑谁呢！(￣Д￣)ﾉ
 
-*** NEXT [#C] ECS的花样食用姿势
+**** NEXT [#C] ECS的花样食用姿势
+
 购买100g云数据盘，里面装所有的依赖及其他，还跟便宜
 
-aliyun OSS 100GB HK/LA ¥0.07/hr/n青岛 ¥0.038/hr/n深圳、北京 ¥0.042/hr/n/n这是
-100g的价格！10g的话一个月下来才3块钱！！
+aliyun OSS 100GB HK/LA ¥0.07/hr
+青岛 ¥0.038/hr
+深圳、北京 ¥0.042/hr
+
+这是100G的价格！10G的话一个月下来才3块钱！！
 
 ⊙_⊙好像不如从云盘现下呢、、
-*** WAITING [#B] paas平台部署脚本
+=P.S. You can get a net disk with api and direct link!=
 
-* Metadata
+**** WAITING [#B] paas平台部署脚本                                           :@rolling_egg:lazy:
+就是我那几个小东西，不麻烦就好。shell脚本对生产力提升巨大

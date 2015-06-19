@@ -3,18 +3,18 @@
 ** First todo list item
 
 With Notes.
-`M-RET` new item heading
+=M-RET= new item heading
 
 ** TODO todo item with todo keywords.
 
-`M-S-RET` New TODO item right under the cursor.
-`C-S-RET` New TODO item at the bottom.
+=M-S-RET= New TODO item right under the cursor.
+=C-S-RET= New TODO item at the bottom.
 
 ** Sub items
 
 *** List item type 1 (Subtitle)
 
-`M-RET` and then `tab` (org-cycle)
+=M-RET= and then =tab= (org-cycle)
 
 **** Sub item
 
@@ -32,7 +32,7 @@ With Notes.
 
 ** switch todo states.
 
-below are the code in `.emacs` for customizing tags
+below are the code in =.emacs= for customizing tags
 #+BEGIN_SRC lisp
 (setq org-todo-keywords
       (quote ((sequence "TODO(t)" "NEXT(n)" "|" "DONE(d!/!)")
@@ -41,5 +41,5 @@ below are the code in `.emacs` for customizing tags
 
 #+END_SRC
 
-then we can switch tags by `C-c C-t t` to switch to `TODO` state, or
-`C-c C-t d` to make it  `DONE`.
+then we can switch tags by =C-c C-t t= to switch to =TODO= state, or
+=C-c C-t d= to make it  =DONE=.
